@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chatbot</title>
+  </head>
+  <body>
+    <div class="title-banner">
+      <h1>Test Chat Bot</h1>
+    </div>
+    <div class="chat-container">
+      <div class="chat-window" id="chat-window"></div>
+      <div class="loading" id="loading">Loading...</div>
+      <input type="hidden" id="history" value="" />
+      <form class="chat-input-form" id="chat-form">
+        <input
+          class="chat-input"
+          type="text"
+          placeholder="Type your message..."
+          id="chat-input"
+        />
+        <button class="chat-submit" type="submit">Send</button>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
